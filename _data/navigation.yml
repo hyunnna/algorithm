@@ -1,4 +1,6 @@
+- title : Main
+  url : /
 - title: Blog
-  url: /blog/blog.markdown/
+  url: /blog/
 - title: About
   url: /about/
