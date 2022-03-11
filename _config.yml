@@ -1,11 +1,11 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
+title: March 41:10
+description: HyunHwa study blog
+url: https://hyunnna.github.io
+avatar: /me.jpg
 paginate: 5
 permalink: pretty
-cover_image: /bg.jpeg
+cover_image: /back.jpg
 
 # Gems
 plugins:
@@ -31,12 +31,12 @@ exclude:
 twitter:
   username: vszhub
   card: summary
-logo: logo.png
+logo: link.png
 social:
   name: Songzi Vong
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://www.instagram.com/_h_hwa
+    - https://github.com/hyunnna
 google_site_verification: xxxxx
 lang: en
 
@@ -45,7 +45,6 @@ sass:
   style: :compressed
 
 # Options
-
 # Replace this value and uncomment to enable Google Analytics tracking
 # google_analytics: UA-000000-0
 
@@ -54,6 +53,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: HyunHwa
+  url: https://github.com/hyunnna/
+  email: wjdgusghk904@naver.com
