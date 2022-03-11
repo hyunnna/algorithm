@@ -5,7 +5,7 @@ show_date: true
 title:  Data Format
 date:   2022-03-09 19:12:32 -0600
 description : The second week study of cloud computing.
-img: posts/202203/data.jpg
+img: /img/data.jpg
 tags: [cloud computing, data]
 author: HyunHwa
 github: hyunnna
