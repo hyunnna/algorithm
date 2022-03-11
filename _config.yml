@@ -6,6 +6,8 @@ avatar: /me.jpg
 paginate: 5
 permalink: pretty
 cover_image: /blue.jpg
+logo-icon: "/symbol/simbol.svg"
+logo-icon-SEO: "/symbol/simbol.svg"
 
 # Gems
 plugins:
@@ -26,6 +28,10 @@ exclude:
   - README.md
   - scripts/
   - not-pure-poole.gemspec
+
+#Disqus
+discus_identifier: hyunnna-github-io # Add your discus identifier
+comments_curtain: yes # leave empty to show the disqus embed directly
 
 # Optimize Jekyl SEO Tag
 instagram:
