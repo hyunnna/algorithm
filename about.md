@@ -7,12 +7,8 @@ title: About
 
 This blog is study blog for computer algroithm class.
 
-
-      **About Me**
-[me](/me.jpg)
-              Engineer, Information and Communication Engineering, learner with diverse interests in coding, Algorithm, Senior in Incheon national University.
-
-
+**About Me**
+Engineer, Information and Communication Engineering, learner with diverse interests in coding, Algorithm, Senior in Incheon national University.
 
 E-mail : wjdgusghk904@naver.com
 Github : [hyunnna](https://github.com/hyunnna)
