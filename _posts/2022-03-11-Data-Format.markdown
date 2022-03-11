@@ -1,10 +1,17 @@
 ---
 layout: post
-title: Data Format
-date: 2022-03-11 02:18 +0800
-last_modified_at: 2020-10-01 01:08:25 +0800
-tags: [data, computer cloud]
-toc:  true
+read_time: true
+show_date: true
+title:  Data Format
+date:   2022-03-09 19:12:32 -0600
+description : The second week study of cloud computing.
+img: posts/202203/data.jpg
+tags: [cloud computing, data]
+author: HyunHwa
+github: hyunnna
+mathjax: yes # leave empty or erase to prevent the mathjax javascript from loading
+
+# toc: yes # leave empty or erase for no TOC
 ---
 
 ## Data Format
