@@ -1,5 +1,5 @@
 # Setup
-title: March 41:10
+title: Sieze The Day !
 description: HyunHwa study blog
 url: https://hyunnna.github.io
 avatar: /me.jpg
@@ -28,8 +28,8 @@ exclude:
   - not-pure-poole.gemspec
 
 # Optimize Jekyl SEO Tag
-twitter:
-  username: vszhub
+instagram:
+  username: _h_hwa
   card: summary
 logo: link.png
 social:
