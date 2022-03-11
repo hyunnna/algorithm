@@ -3,4 +3,4 @@ layout: page
 title: Blog
 ---
 
-[blog/blog.jpg]
+[blog](/blog.jpg)
