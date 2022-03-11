@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-[seize](/seize.jpg)
+[seize](/seize.jpg/)
 
 This blog is study blog for computer algroithm class.
 
