@@ -1,0 +1,87 @@
+---
+layout: post
+read_time: true
+show_date: true
+title:	Git
+date:   2022-03-13 10:12:32 -0600
+description : 
+# img: posts/202203/data.jpg
+tags: [git, jekyll blog, jekyll]
+author: HyunHwa
+github: hyunnna
+mathjax: yes # leave empty or erase to prevent the mathjax javascript from loading
+
+# toc: yes # leave empty or erase for no TOC
+---
+
+
+## Git  
+* ### 기존 프로젝트 를 git repository 에 연결하기  
+1. 기존 프로젝트 폴더 내에 git bash 등 으로 진입  
+`
+cd myproject
+`  
+
+2. git 초기화  
+`
+git init
+`  
+
+    <span style="background-color: blue">완료 메세지 : Initialized empty Git reposioty in C:/myproject/.git/</span>  
+
+3. github 또는 bitbucket 등 프로젝트를 연결할 repository 생성 (README 등 파일 생성 없이 빈 레포지토리로 생성 권장)  
+
+    README 파일을 생성하면 최초 커밋 시 파일 기록이 달라서 오류 발생할 확률이 높음  
+
+4. repository 연결  
+
+    `
+    git remote add origin username@github.com/myname/myprojekyt.git
+    `   
+    
+    repository 주소 붙여넣기  
+    
+    연결된 repo 확인  
+
+    `
+    git remote -v
+    `  
+
+5. 새 repository에서 내용을 pull , git history 동기화  
+
+    `
+    git pull origin master
+    `
+
+6. 새 repository에 파일을 업로드 하기 위해 스테이지에 파일을 올림  
+
+    `
+    git add .
+    `  
+
+    git add . 은 모든 파일을 repo에 올린다는 뜻이다.  
+
+
+7. 최초 커밋  
+
+    `
+    git commit -m "first commit"  
+    `
+
+    " " 에는 아무 메시지나 넣어도 된다.  
+
+8. repository에 파일 업로드  
+
+    `
+    git push -u origin master
+    `    
+
+    -u는 git pull / git push 를 할 때 origin master을 지정하지 않아도 알아서 origin master 으로 붙여서 가져오는 옵션이다.  
+<br />
+
+* 현재 git의 상태 알기  
+    `
+    git status
+    ` 
+
+

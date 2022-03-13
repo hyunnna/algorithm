@@ -8,7 +8,7 @@ description: The first weeek study avout security system.
 img: posts/202203/assembly.jpg
 tags: [security]
 author: hyunnna
-github:  https://github.com/hyunnna
+github:  hyunnna
 mathjax: yes
 ---
 
