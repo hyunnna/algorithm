@@ -2,182 +2,152 @@
 layout: post
 read_time: true
 show_date: true
-title:  Distributed Cloud Computing
-date:   2022-03-09 19:12:32 -0600
-description : Distributed Cloud Computing Class
-img: posts/202203/data.jpg
-tags: [Distributed Cloud Computing , Senior]
+title:	점근적 표기법 (Asymtotic natation)
+date:   2022-03-12 10:12:32 -0600
+description : 
+# img: posts/202203/data.jpg
+tags: [asymtitic natation, algorithm, time complexity]
 author: HyunHwa
 github: hyunnna
 mathjax: yes # leave empty or erase to prevent the mathjax javascript from loading
 
 # toc: yes # leave empty or erase for no TOC
 ---
-# <span style="color:Khaki"> **1. Data Format**  </span>  
-
- ### **정형 데이터 (Structured Data)**
-* #### 관계형 데이터처럼 Schema에 따라 저장된 구조화된 데이터
-* #### 일반적으로 Table 형식으로 RDBMS에 저장 (예: 은행 계좌 정보등의 데이터)
-
- ### **비정형 데이터(Unstructured Data)**
-* #### Schema나 데이터 모델 없이 저장되는 데이터 (일반 텍스트나 사진, 동영상)
-
-
- ### **반정형 데이터 (Semi-Structured Data)**
-* #### 고정된 필드를 가지고 있지는 않고 관계형 데이터 아님
-* #### 데이터에 스키마나 메타에이터와 같은 구조 정보를 포함하고 있어 일관성유지
-* #### 계층적, 그래프 기반의 데이터( XML, HTML 문서 / JSON, BSON 형태의 데이터)  
 <br />
 
-### **XML (eXtensivle Markup Language)**  
 
-* 구조화된 문서를 네트워크 환경에서 전송 및 활용 가능하도록 설계된 표준 마크업 언어
-* ISO SGML의 서브셋(subset)  
+# <span style="color: #87CEEB">**점근적 표기법 (Asymtotic natation)** </span>  
 
-    +  장점   
-        * 호환성 : 국제 표준 규약  
-        * 독립성   
-        + HW, OS , 프로그래밍 언어에 독립  
-        + 서로 다른 네트워크 환경에서 유용  
-        + 구조화  
-        + 활용성
-        + 확장성  
-        + 분석 성능
 
-    <br /> 
+#### 알고리즘의 효율성에서 실제 소요시간을 따지는 것이 중요하다.  
 
-    + 단점   
-     오버헤드 (large size)  
-<br /> 
+<br />
 
-### **JSON (JavaScript Object Notation)** 
+#### 알고리즘의 실행 시간은 **입력값의 크기**에 따라 달라질 수 있는데 예를 들어 특정 회원을 찾을 때 옵션을 들어 찾는다면 더 빨리 찾을 수 있을 것이다. 이렇게 입력값의 크기에 대한 함수로 알고리즘의 실행 시간을 생각할 수 있습니다.
 
-+ JavaScript 언어의 객체 사용방식
-+ 데이터 교환을 위한 표현 방식  
-    + XML 대비 경량 (small size) : 저장 및 전송 고속화
-    + 개방형 표준 포맷  
-        - AJAX에 활용  
-+ 장점  
-    + 사람, 기계 모두 읽고 쓰기 용이  
-    + 프로그래밍 언어나 플랫폼에 독립적  
-    + Javascript 문법 채용
-        + eval() 함수로 처리 가능
-        + 대부분의 웹브라우저가 JASON parser 내장  
-    + 형식  
-        + object - {"key2" : value, "key 2" : value}
-        + value : 기본 자료형 (number, string, true , false, null) 및 array, object가능  
-        + array - [a, b, c]  
+<br />
+
+### <span style="color: #87CEEB">실행시간의 성장률 ( rate of growth )<br />
+
+#### : 프로그램을 쉽게 유지 할 수 있도록 불필요한 부분을 버리고 가장 중요한 부분만 추려내서 함수를 간소화 할 필요성이 있다.  
+다음은 입력값의 크기에 따라 알고리즘의 함수가 얼마나 커지는지에 대한 그래프이다.  
+
+1. 입력값의 크기가 n 인 알고리즘이 6n<sup>2</sup> + 100n + 300이라는 명령을 받는다고 가정했을 때 n의 값이 어느정도 커지면 6n<sup>2</sup>은 100n + 300보다 커지는 것을 볼 수 있다.  
+
+
+<center>
+<img src="https://cdn.kastatic.org/ka-perseus-images/0642ea78ce621e53dbe7f45881a97786c7262635.png" width="70%" height="100%">  
+</center>
+<br />
+     n<sup>2</sup>의 계수인 6과 100n + 300을 제외하면 이 알고리즘의 실행시간은 n<sup>2</sup>으로 커지는 것을 아래 그래프에서 확인할 수 있다. 
+<br /> <br />
+
+2. 아래 그래프는 n의 계수들을 바꾸어 나타낸 그래프이다.  
+
+<center>
+<img src="https://cdn.kastatic.org/ka-perseus-images/d2d40c938c1bab9f413c83164fec8ae9945e402b.png" width="70%" height="100%">  
+</center>
+
+
+
+
+#### 따라서 필수적인 부분을 집중하고 불필요한 상세들을 무시하여 알고리즘의 수행시간을 표기하는 방법을  <span style="color: F05650">점근적 표기법</span>  이라고 한다.
+ <br />
  
-### **BSON (Binary javaScript Object Notation)**  
-<br />
-
-+ Binary JSON  
-    + 이진형식의 JOSN(text -> binary)
-    + 데이터 교환을 위한 표현방식  
-    + MongoDM 의 primary data format (데이터 저장 및 네트워크 전송용)  
-    + 특징   
-        + Lightweight : minimum overheads (small size)  
-        + Traversal : designed to be traversed easily (vital property : MongoDB)  
-        + Efficient : 대부분 프로그램 언어의 data type으로 빠르게 변환 가능  
-        <br />
-
-***
-<br />
-
-# <span style="color:Khaki"> **2. SOAP**  </span> 
-
-* **개요**   
-분산 환경에서 애플리케이션 간의 정보를 교환하기 위한 XML 기반의 메시지 프로토콜  
-
-* **목적**  
-    * 상호 운영성 Interoperability)  
-    * 서로 다른 플랫폼에서 구현된 컴포넌트를 통합 할 수 있는 표준 프로토콜  
-
-* **특징** 
-    * XML 기반으로 구현 언어 및 플랫폼에 독립적  
-     * 필요에 따른 확장 가능 구조  
-    * HTTP 프로토콜을 이용하므로 방화벽에 차단되지 않음  
-<br />
-
-* ## **SOAP 메시징 구조**  
-
-   ![구조](https://t1.daumcdn.net/cfile/tistory/1311C6184C8DD6BA5E)  
-
-    ### **<span style="color: #000; background-color: LemonChiffon">SOAP의 루트 엘리먼트 <env:Envelope> </span>**  
-
-    - SOAP 메시지의 최상위 엘리먼트 , <env:Header>, <env:Body> 엘리먼트를 포함  
-    <br />
-    ### **<span style="color: #000; background-color: LemonChiffon">SOAP Header </span>** 
-    - <env:Envelope> 의 하위 엘리먼트  
-    - 선택적으로 사용될 수 있ek.
-    - SOAP 메시지를 처리하는데 필요한 추가 정보를 기술 (인증 정보, 세션, 트랜젝션)  
-    - SOAP Header에 사용되는 두가지 attribute  
-        + mustUnderstand attribute
-        + actor attribute  
-    ```java
-    <env: Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">  
-        <env:Header>  
-            * <t:Transaction xmlns:t="http://example.org/2022/03/tx"> 5 </t:Transaction>
-        <env:Header> *
-        ...SOAP Body...  
-    </env:Envelope>  
-
-   ```
-
-    ### **<span style="color: #000; background-color: LemonChiffon">SOAP Attribute </span>**  
-
-    + **용도**  
-        해당 Header 블록을 누가 처리해야 하는지를 지정하는 attribute  
-
-    + 처리   
-        + **actor attribute가 지정된 경우**  
-            : actor attribute에 지정된 노드가 SOAP Header 블록을 처리  
-        + **actor attribute가 지정 되지 않았을 경우**  
-            : SOAP 메시지의 최종 수신자가 처리  
-    <br />
-
-    ### **<span style="color: #000; background-color: LemonChiffon">mustUnderstand Attribute </span>**  
-
-    + **용도**  
-        Header에 포함된 내용이 반드시 처리되어야 하는지 지정하기 위한 attribute  
-
-    + **attribute 값**
-        + **값이 1일 경우**  
-            : 반드시 처리 해야한다.
-        + **값이 0일 경우**  
-            : Header 정보를 처리하지 않아도 무방하다.  
-<br />
-
-    #### **<span style="color: #000; background-color: LemonChiffon">SOAP Body </span>**  
-
-    + **<env:Body> element**  
-        웹 서비스를 이용하기 위한 실제 메시지를 기술
-    + **내용**   
-        + 서비스 호출과 응답에 관련된 내용을 기술 
-        + 웹 서비스가 수행된 후 에러가 있을 때 SOAP Fault를 기술  
-    <br />
-
-    #### **<span style="color: #000; background-color: LemonChiffon">SOAP Error Message </span>**  
-
-    + **<env:Fault> element**  
-        SOAP 문서의 처리시 에러가 발생할 경우 에러의 내용을 기술하기 위한 element
+ **점근 표기법**은 위 그래프와 같이 시간복잡도 또는 공간복잡도 함수의 증가 양상을 구분하기 위해 사용하는 표기법으로 아래 세가지로 구분할 수 있다.  
+ **O(f(n))** : 상한, 아무리 느려봤자 f(n) 정도이다. f(n)보다 빠르거나 같다.  
+**Ω(f(n))** : 하한, 아무리 빨라봤자 f(n) 정도이다. f(n)보다 느리거나 같다.  
+**Θ(f(n))** : 차수, 상한과 하한을 함께 제시. 두 집합의 교집합  
 
 <br />
 
-* ## **SOAP Encoding**  
-    : 자바에서 사용되는 데이터 타입과 SOAP 메시지에 사용되는 데이터 타입 간의 변환 과정  
+그전에 함수의 차수는 낮을수록 빠르며 그래프 으로 그렸을때 아래에 있는 함수가 더 빠르다.  
+
+<center>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FTRG1s%2FbtqRonduSko%2FsS5eg2XJbdakWRJfkKNHnK%2Fimg.png" width="40%" height="100%">  
+</center>
+
 <br />
 
-* ## **SOAP Binding**  
-    + SOAP 메시지를 어떤 프로토콜을 사용해서 전송할 것인지 지정하는 것  
-    + SOAP 메시지는 HTTP,FTP,SMTP 등 여러가지 프로토콜 이용가능 (기본적으로 HTTP 바인딩 이용)  
-    <br />
-    ### **SOAP 메시지 바인딩 - HTTP 바인딩의 SOAPAction**    
-    : HTTP 헤더 안에 존재하는 SOAP 메시지의 부가정보 기술  
-    
-    #### **용도**  
-    * SOAP 메시지의 확인  
-    * 정확한 수신자 지정
-    * 보안상의 목적 
-    <br /><br />
-    ***
+ex) 위 그래프를 봤을 때 처음에는 g(n)의 그래프가 더 아래에 있지만 시간이 갈수록 f(n)의 그래프가 아래에 있기 때문에 cf(n)의 함수가 더 빠르다.
+ <br />
+
+### <span style="color: #87CEEB">O(F(n)) : 점근적 상한 / asympotic upper bound </span>  
+ <br />
+
+<center>
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FddfADm%2FbtqRnOh6rs0%2FAqRfHQMUZYR2Q3E0plDJpk%2Fimg.png" width="40%" height="100%">
+
+</center>
+
+### [O-표기법] ( = Big-O)  
+  
+ 그래프를 봤을 때 g(n) ∈ O(f(n))일 때, f(n)이 g(n)의 상한이 된다. 즉 g(n)이 f(n)보다 빠르거나 같다는 뜻이다.
+
+### **O(x(n)) = {f(n) : 모든 n ≤ f(n)≤ cx(n)인 양의 상수 c and n<sub>0</sub>이 존재 한다}**  
+<br />
+
+<center>
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLDNZ0%2FbtqRomyycgm%2F9rVJBikUjX5qYNimlI7ECK%2Fimg.png" width="40%" height="100%">
+</center>
+
+위 그림과 같이 O(n<sup>2</sup>)에 속하는 집합의 함수들  = g(n) 은 n<sup>2</sup>(=f(n))보다 빠르거나 같다.  
+<br />
+
+### <span style="color: #87CEEB">Ω(f(n)) : 점근적 하한, asympotic lower bound </span>  
+ <br />
+
+<center>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbeRXK6%2FbtqRt5h4NpQ%2FdbsRFw3gCpeKOqYByDc5oK%2Fimg.png" width="40%" height="100%">
+
+</center>
+
+그래프를 봤을 때 g(n)dl cf(n)보다 느리므로 g(n) ∈ Ω(f(n))일 때, f(n)이 g(n)의 하한이 된다. 즉, g(n)이 f(n)보다 느리거나 같다.    
+
+### **f(n)에 대해 g(n) ≥ c x f(n)을  만족하는 음이아닌 정수 n과 상수 c가 존재한다.**   
+<br />
+
+
+### <span style="color: #87CEEB">Θ(f(n)) : 차수, asympotic tight bound</span>  
+ <br />
+
+<center>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6CfXA%2FbtqRt4XLpKi%2Fym7SYC0xiaHKbERqOBRdXK%2Fimg.png" width="40%" height="100%">
+
+</center>
+
+
+Θ(n) = O(f(n)) ∩ Ω(f(n))일 때, Θ(n)은 가능한 모든 g(n)의 집합이다. g(n) ∈ Θ(f(n))일 때, "g(n)은 f(n)의 차수(order)"라고 한다. 그래프를 보면 g(n)이 cf(n)보다 느리고, df(n)보다 빠르다. 따라서 g(n) ∈ Θ(f(n))이다.  
+
+### **주어진 복잡도함수 f(n)에 대해 c x f(n) ≤ g(n) ≤d x f(n)을 만족 만족하는 음이아닌 정수 n과 상수 c가 존재한다.**  
+
+ <br />
+
+ ### <span style="color: #87CEEB">**시간복잡도 함수**<br />  
+ 
+<br />
+ : 문제를 해결하는데 걸리는 시간과 입력의 함수 관계  
+
+ * ### O(n)  
+    #### 빅오 표기법 : 계수와 낮은 차수의 항을 제외시키는 방법  
+
+     ex) 크기 n 의 모든 입력에 대한 알고리즘에 필요한 시간이 최대 n<sup>6</sup> + n<sup>3</sup> + 4 
+ 의 식을 가진다면 이 알고리즘의 점근적 시간 복잡도 O(n) = 6 이라고 할 수 있다.  
+
+<br />
+
+ * ### T(n)  
+    #### 빅오 표기법과 반대로 크기 n의 모든 입력에 대해 걸리는 최대의 시간을 보여주는 시간 복잡도  
+ 
+ <br />
+ <br />
+
+****
+
+##### 출처 :  
+
+##### https://ko.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation  
+##### https://chayan-memorias.tistory.com/100  
+##### https://nolzaheo.tistory.com/3
