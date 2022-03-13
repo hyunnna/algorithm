@@ -38,6 +38,8 @@ cd my-awesome-site
 ```
 <br />  
 
+***
+
 ## Jekyll Blog theme 적용  
 
 ### 테마 선택  
@@ -62,4 +64,4 @@ cd my-awesome-site
 
 
 
-#### 출처: https://zeddios.tistory.com/1223 [ZeddiOS]
+##### 출처: https://zeddios.tistory.com/1223 [ZeddiOS]
