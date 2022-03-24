@@ -27,9 +27,10 @@ mathjax: yes # leave empty or erase to prevent the mathjax javascript from loadi
 ### <span style="color:PaleVioletRed">**알고리즘 설계하기** </span>  
 <br />
 
-  ### 1. **Divide** : 문제가 분할이 가능한 경우, 2개 이상의 문제로 나눈다.  
-  ### 2. **Conquer** : 나누어진 문제가 여전히 분할이 가능하면, 또 다시 Divide를 수행한다.
-  ### 3. **Combine** : Conquer한 문제들을 통합하여 문제의 답을 얻는다.  
+### 1. **Divide** : 문제가 분할이 가능한 경우, 2개 이상의 문제로 나눈다.   
+### 2. **Conquer** : 나누어진 문제가 여전히 분할이 가능하면, 또 다시 Divide를 수행한다.  
+### 3. **Combine** : Conquer한 문제들을 통합하여 문제의 답을 얻는다.  
+
 <br />
 
   + 장점 : 문제를 나눔으로써 어려운 문제 해결 가능  
@@ -58,17 +59,16 @@ function F(x) :
 ```  
 <br />  
 
-### <span style="color:PaleVioletRed">**주의할점** </span> 
+### <span style="color:PaleVioletRed">**주의할점** </span>  
 
+분할정복이 부적절한 경우는 입력이 분할될때마다 분할된 부분문제의 입력 크기의 합이 분할 되기 전의 입력 크기보다 매우 커지는 경우이다.
 
-
-
-
-    
 
 
 
 
 <br /><br />
+
 ***
+
 ##### 출처 : https://namu.wiki/w/%EB%B6%84%ED%95%A0%20%EC%A0%95%EB%B3%B5%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?from=%EB%B6%84%ED%95%A0%20%EC%A0%95%EB%B3%B5

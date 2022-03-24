@@ -10,7 +10,6 @@ tags: [asymtitic natation, algorithm, time complexity]
 author: HyunHwa
 github: hyunnna
 mathjax: yes # leave empty or erase to prevent the mathjax javascript from loading
-
 # toc: yes # leave empty or erase for no TOC
 ---
 <br />
@@ -25,10 +24,10 @@ mathjax: yes # leave empty or erase to prevent the mathjax javascript from loadi
 
 #### 알고리즘의 실행 시간은 **입력값의 크기**에 따라 달라질 수 있는데 예를 들어 특정 회원을 찾을 때 옵션을 들어 찾는다면 더 빨리 찾을 수 있을 것이다. 이렇게 입력값의 크기에 대한 함수로 알고리즘의 실행 시간을 생각할 수 있습니다.
 
- ### <span style="color: #87CEEB">**실행시간의 성장률 ( rate of growth )** </span>  
+### <span style="color: #87CEEB">**실행시간의 성장률 ( rate of growth )** </span>  
 
 
-#### : 프로그램을 쉽게 유지 할 수 있도록 불핋요한 부분을 버리고 가장 중요한 부분만 추려내서 함수를 간소화 할 필요성이 있다.  
+#### : 프로그램을 쉽게 유지 할 수 있도록 불필요한 부분을 버리고 가장 중요한 부분만 추려내서 함수를 간소화 할 필요성이 있다.  
 다음은 입력값의 크기에 따라 알고리즘의 함수가 얼마나 커지는지에 대한 그래프이다.  
 
 1. 입력값의 크기가 n 인 알고리즘이 6n<sup>2</sup> + 100n + 300이라는 명령을 받는다고 가정했을 때 n의 값이 어느정도 커지면 6n<sup>2</sup>은 100n + 300보다 커지는 것을 볼 수 있다.  
@@ -36,7 +35,9 @@ mathjax: yes # leave empty or erase to prevent the mathjax javascript from loadi
 
 
 <center>
+
 <img src = "https://cdn.kastatic.org/ka-perseus-images/0642ea78ce621e53dbe7f45881a97786c7262635.png"  width=60% height="100%">
+
 </center>
 
 
@@ -48,7 +49,9 @@ mathjax: yes # leave empty or erase to prevent the mathjax javascript from loadi
 
 
 <center>
+
 <img src = "https://cdn.kastatic.org/ka-perseus-images/d2d40c938c1bab9f413c83164fec8ae9945e402b.png"  width=60% height="100%">
+
 </center>
 
 
@@ -63,7 +66,9 @@ mathjax: yes # leave empty or erase to prevent the mathjax javascript from loadi
 그전에 함수의 차수는 낮을수록 빠르며 그래프 으로 그렸을때 아래에 있는 함수가 더 빠르다.  
 
 <center>
+
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FTRG1s%2FbtqRonduSko%2FsS5eg2XJbdakWRJfkKNHnK%2Fimg.png" width="40%" height="100%">  
+
 </center>
 
 <br />
@@ -123,7 +128,7 @@ ex) 위 그래프를 봤을 때 처음에는 g(n)의 그래프가 더 아래에 
 
  <br />
 
- ### <span style="color: #99CCFF">**시간복잡도 함수**</span>  
+### <span style="color: #99CCFF">**시간복잡도 함수**</span>  
  
 <br />
  : 문제를 해결하는데 걸리는 시간과 입력의 함수 관계  
