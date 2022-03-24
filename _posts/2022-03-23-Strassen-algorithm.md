@@ -2,22 +2,6 @@
 layout: post
 read_time: true
 show_date: true
-title:	Strassen algorithm
-date:   2022-03-23 10:12:32 -0600
-description : Examples of divide and conquer algroithm
-# img: posts/202203/data.jpg
-tags: [Divide and Conquer]
-author: HyunHwa
-github: hyunnna
-mathjax: yes # leave empty or erase to prevent the mathjax javascript from loading
-# toc: yes # leave empty or erase for no TOC
----
-
-
----
-layout: post
-read_time: true
-show_date: true
 title:	Strassen Algorithm
 date:   2022-03-23 18:12:32 -0600
 description : Examples of divide and conquer algroithm - There is not in the text book!
